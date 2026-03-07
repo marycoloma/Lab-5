@@ -27,3 +27,8 @@ header {
   width: 80px;
   height: auto;
 }
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
