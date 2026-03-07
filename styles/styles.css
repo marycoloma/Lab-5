@@ -59,9 +59,9 @@ body {
   color: blue;
 }
 
-/* ⭐ BOTH PAGES: same left column alignment */
+/* Shared content spacing for both pages */
 .content {
-  padding-left: 40px; /* THIS is the fix */
+  padding-left: 40px; /* aligns Home + Contact in same column */
   padding-right: 20px;
   max-width: 900px;
   text-align: left;
@@ -75,16 +75,16 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* CONTACT PAGE — center the form only */
-.content.contact-page {
-  display: flex;
-  justify-content: center;
+/* ⭐ CONTACT PAGE — center the whole block */
+.content.contact-page section {
+  width: 400px; /* same width as the form */
+  margin: 0 auto; /* centers the entire section */
 }
 
-/* CONTACT FORM — centered */
+/* CONTACT FORM — centered inside the section */
 form {
-  width: 400px;
-  margin: 20px 0;
+  width: 100%; /* matches the section width */
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
