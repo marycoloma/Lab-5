@@ -63,3 +63,11 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
 }
+
+button {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
