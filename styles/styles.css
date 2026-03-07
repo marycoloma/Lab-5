@@ -127,8 +127,8 @@ footer {
   margin-top: 40px;
 }
 
+/* ⭐ HOME PAGE ONLY — final alignment fix */
 .content.home-page {
-  padding-left: 20px;
+  padding-left: 20px; /* aligns perfectly with nav */
   padding-right: 20px;
-  margin: 0 auto;
 }
