@@ -59,9 +59,9 @@ body {
   color: blue;
 }
 
-/* Shared content spacing for both pages */
+/* Shared content spacing */
 .content {
-  padding-left: 40px; /* aligns Home + Contact in same column */
+  padding-left: 40px;
   padding-right: 20px;
   max-width: 900px;
   text-align: left;
@@ -75,15 +75,16 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* ⭐ CONTACT PAGE — center the whole block */
+/* ⭐ CONTACT PAGE — center the entire block */
 .content.contact-page section {
-  width: 400px; /* same width as the form */
-  margin: 0 auto; /* centers the entire section */
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* CONTACT FORM — centered inside the section */
 form {
-  width: 100%; /* matches the section width */
+  width: 100%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
