@@ -59,10 +59,12 @@ body {
   color: blue;
 }
 
-/* Center the entire contact section */
-.content.contact-page {
-  display: flex;
-  justify-content: center;
+/* ⭐ BOTH PAGES: same left column alignment */
+.content {
+  padding-left: 40px; /* THIS is the fix */
+  padding-right: 20px;
+  max-width: 900px;
+  text-align: left;
 }
 
 section {
@@ -73,16 +75,16 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* CONTACT PAGE — center the entire form area */
-.contact-page {
+/* CONTACT PAGE — center the form only */
+.content.contact-page {
   display: flex;
-  justify-content: center; /* centers the form horizontally */
+  justify-content: center;
 }
 
 /* CONTACT FORM — centered */
 form {
   width: 400px;
-  margin: 20px auto; /* centers the form container */
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -103,7 +105,7 @@ form textarea {
 form button {
   width: 120px;
   padding: 10px;
-  align-self: center; /* centers the button */
+  align-self: center;
   background-color: #0077cc;
   color: white;
   border: none;
