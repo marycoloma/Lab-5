@@ -14,18 +14,11 @@ body {
 /* Small top header bar */
 .top-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
   background-color: #e6e6e6;
   padding: 10px 20px;
   border-bottom: 1px solid #ccc;
-}
-
-/* Left side: logo + title */
-.left-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 .logo {
@@ -37,7 +30,13 @@ body {
   font-size: 1.4rem;
 }
 
-/* Right side navigation box */
+/* Navigation box BELOW header */
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
 .top-nav ul {
   list-style: none;
   display: flex;
