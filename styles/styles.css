@@ -76,8 +76,8 @@ section h2 {
 
 /* CONTACT FORM — centered */
 form {
-  width: 400px;
-  margin: 20px auto; /* centers the form */
+  width: 400px; /* fixed width for clean layout */
+  margin: 20px auto; /* centers the entire form */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -90,7 +90,7 @@ form label {
 
 form input,
 form textarea {
-  width: 100%;
+  width: 100%; /* full width inside centered form */
   padding: 10px;
   border: 1px solid #ccc;
 }
@@ -98,7 +98,7 @@ form textarea {
 form button {
   width: 120px;
   padding: 10px;
-  align-self: center;
+  align-self: center; /* centers the button */
   background-color: #0077cc;
   color: white;
   border: none;
