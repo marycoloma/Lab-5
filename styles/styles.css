@@ -71,3 +71,10 @@ button {
   border: none;
   cursor: pointer;
 }
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+}
