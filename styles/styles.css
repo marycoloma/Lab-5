@@ -21,6 +21,7 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
+/* Logo + title */
 .logo {
   width: 40px;
   height: auto;
@@ -30,10 +31,10 @@ body {
   font-size: 1.4rem;
 }
 
-/* Navigation box BELOW header */
+/* Navigation box BELOW header, aligned LEFT */
 .top-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start; /* LEFT alignment */
   padding: 10px 20px;
 }
 
@@ -57,11 +58,12 @@ body {
   color: blue;
 }
 
-/* Main content */
+/* Main content LEFT aligned */
 .content {
   padding: 20px;
   max-width: 900px;
-  margin: auto;
+  margin-left: 20px; /* LEFT alignment */
+  text-align: left; /* LEFT alignment */
 }
 
 section {
