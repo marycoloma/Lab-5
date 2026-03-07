@@ -8,45 +8,48 @@
   </head>
 
   <body>
-    <header>
-      <img src="images/mlogo.png" alt="Mary's Online Store logo" class="logo" />
-      <h1>Mary's Online Store</h1>
+    <header class="top-header">
+      <div class="left-header">
+        <img
+          src="images/mlogo.png"
+          alt="Mary's Online Store logo"
+          class="logo"
+        />
+        <h1 class="page-title">Mary's Online Store</h1>
+      </div>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="layout">
-      <aside>
-        <nav aria-label="Sidebar navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-          </ul>
-        </nav>
-      </aside>
+    <main class="content">
+      <section>
+        <h2>Contact Us</h2>
 
-      <main>
-        <section>
-          <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input id="name" name="name" type="text" required />
 
-          <form action="#" method="post">
-            <label for="name">Your Name:</label>
-            <input id="name" name="name" type="text" required />
+          <label for="email">Email Address:</label>
+          <input id="email" name="email" type="email" required />
 
-            <label for="email">Email Address:</label>
-            <input id="email" name="email" type="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Submit</button>
-          </form>
-        </section>
-      </main>
-    </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
 
     <footer>
       <p>Created by Mary Ann Coloma</p>
       <p>
-        Follow us on <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        Follow us on
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> |
         <a href="#">Instagram</a>
       </p>
     </footer>
