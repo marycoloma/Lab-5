@@ -59,7 +59,7 @@ body {
   color: blue;
 }
 
-/* Shared content spacing */
+/* Shared content spacing (HOME uses this as-is) */
 .content {
   padding-left: 40px;
   padding-right: 20px;
@@ -75,17 +75,23 @@ section h2 {
   margin-bottom: 10px;
 }
 
-/* ⭐ CONTACT PAGE — center the entire block */
-.content.contact-page section {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+/* CONTACT PAGE: adjust only this page's main + section */
+.content.contact-page {
+  padding-left: 0; /* remove left offset so we can truly center */
+  padding-right: 0;
+  max-width: 900px;
+  margin: 0 auto; /* center the whole contact main */
 }
 
-/* Center ONLY the contact form */
+/* Center the contact block itself */
+.content.contact-page section {
+  width: 400px; /* column width for the form */
+  margin: 40px auto; /* center the section in the page */
+}
+
+/* Form fills the 400px column */
 form {
-  width: 400px; /* fixed width */
-  margin: 20px auto; /* centers the form horizontally */
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -119,9 +125,4 @@ footer {
   padding: 20px;
   background-color: #ddd;
   margin-top: 40px;
-}
-
-.content.contact-page {
-  padding-left: 0;
-  padding-right: 0;
 }
