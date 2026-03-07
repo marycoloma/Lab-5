@@ -82,10 +82,10 @@ section h2 {
   margin-right: auto;
 }
 
-/* CONTACT FORM — centered inside the section */
+/* Center ONLY the contact form */
 form {
-  width: 100%;
-  margin-top: 20px;
+  width: 400px; /* fixed width */
+  margin: 20px auto; /* centers the form horizontally */
   display: flex;
   flex-direction: column;
   gap: 15px;
