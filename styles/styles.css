@@ -126,3 +126,10 @@ footer {
   background-color: #ddd;
   margin-top: 40px;
 }
+
+/* HOME PAGE ONLY — align content to the same column */
+.content.home-page {
+  padding-left: 20px; /* reduce the left push */
+  padding-right: 20px; /* match both sides */
+  margin: 0 auto; /* keeps it visually balanced */
+}
