@@ -17,9 +17,9 @@ body {
   align-items: center;
   gap: 10px;
   background-color: #e6e6e6;
-  padding: 15px 20px; /* more space */
+  padding: 15px 20px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 15px; /* space below header */
+  margin-bottom: 15px;
 }
 
 /* Logo + title */
@@ -36,13 +36,13 @@ body {
 .top-nav {
   display: flex;
   justify-content: flex-start;
-  padding: 0 20px 15px 20px; /* space below nav */
+  padding: 0 20px 15px 20px;
 }
 
 .top-nav ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* more space between Home / Contact */
+  gap: 20px;
   background-color: white;
   padding: 10px 15px;
   border: 1px solid #ccc;
@@ -67,11 +67,42 @@ body {
 }
 
 section {
-  margin-bottom: 40px; /* space between sections */
+  margin-bottom: 40px;
 }
 
 section h2 {
-  margin-bottom: 10px; /* space between title + text */
+  margin-bottom: 10px;
+}
+
+/* CONTACT FORM — centered */
+form {
+  width: 400px;
+  margin: 20px auto; /* centers the form */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 120px;
+  padding: 10px;
+  align-self: center;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -79,5 +110,5 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #ddd;
-  margin-top: 40px; /* space above footer */
+  margin-top: 40px;
 }
