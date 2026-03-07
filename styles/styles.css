@@ -17,8 +17,9 @@ body {
   align-items: center;
   gap: 10px;
   background-color: #e6e6e6;
-  padding: 10px 20px;
+  padding: 15px 20px; /* more space */
   border-bottom: 1px solid #ccc;
+  margin-bottom: 15px; /* space below header */
 }
 
 /* Logo + title */
@@ -34,16 +35,16 @@ body {
 /* Navigation box BELOW header, aligned LEFT */
 .top-nav {
   display: flex;
-  justify-content: flex-start; /* LEFT alignment */
-  padding: 10px 20px;
+  justify-content: flex-start;
+  padding: 0 20px 15px 20px; /* space below nav */
 }
 
 .top-nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px; /* more space between Home / Contact */
   background-color: white;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
@@ -60,14 +61,17 @@ body {
 
 /* Main content LEFT aligned */
 .content {
-  padding: 20px;
+  padding: 0 20px;
   max-width: 900px;
-  margin-left: 20px; /* LEFT alignment */
-  text-align: left; /* LEFT alignment */
+  text-align: left;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* space between sections */
+}
+
+section h2 {
+  margin-bottom: 10px; /* space between title + text */
 }
 
 /* Footer */
@@ -75,5 +79,5 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #ddd;
-  margin-top: 20px;
+  margin-top: 40px; /* space above footer */
 }
