@@ -68,8 +68,15 @@ form {
   text-align: left;
 }
 
+.form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 label {
-  display: block;
+  display: flex;
+  flex-direction: row;
   margin-top: 10px;
 }
 
