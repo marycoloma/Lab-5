@@ -1,15 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
 
-/* Header */
+/* HEADER (centered like mock-up) */
 header {
+  text-align: center;
   padding: 20px;
 }
 
+/* Oval logo */
 .logo-oval {
   width: 120px;
   height: 70px;
@@ -18,13 +19,15 @@ header {
   margin: 10px 0;
 }
 
-/* Navigation */
+/* LEFT-ALIGNED NAVIGATION */
 nav {
-  margin-top: 10px;
+  width: 100%;
+  text-align: left; /* forces left alignment */
+  margin-left: 20px; /* matches mock-up spacing */
 }
 
 nav a {
-  margin: 0 10px;
+  margin-right: 15px;
   text-decoration: none;
   color: black;
 }
@@ -34,19 +37,20 @@ nav a.active {
   font-weight: bold;
 }
 
-/* Main content */
+/* LEFT-ALIGNED MAIN CONTENT */
 main {
   padding: 20px;
+  text-align: left; /* forces left alignment */
 }
 
+/* Sections */
 section {
   margin-bottom: 30px;
 }
 
-/* Form */
+/* FORM (left aligned) */
 form {
   max-width: 300px;
-  margin: 0 auto;
   text-align: left;
 }
 
@@ -72,9 +76,10 @@ button {
   cursor: pointer;
 }
 
-/* Footer */
+/* FOOTER (centered like mock-up) */
 footer {
-  margin-top: 40px;
+  text-align: center;
   padding: 20px;
   background-color: #f2f2f2;
+  margin-top: 40px;
 }
