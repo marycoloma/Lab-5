@@ -4,49 +4,13 @@ body {
   padding: 0;
 }
 
-/* HEADER */
-.page-header {
-  padding: 20px;
-}
-
-/* Top row: small Home page + circles */
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.page-label {
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Three circles */
-.header-circles {
-  display: flex;
-  gap: 8px;
-}
-
-.circle {
-  width: 15px;
-  height: 15px;
-  background-color: #ccc;
-  border-radius: 50%;
-}
-
-/* Underline */
-.underline {
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 10px 0 20px 0;
-}
-
 /* Middle row: oval placeholder + Page Name */
 .header-middle {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /* OVAL PLACEHOLDER */
@@ -59,6 +23,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 /* VERTICAL NAVIGATION BOX */
@@ -88,6 +54,7 @@ body {
 .left-content {
   padding: 20px;
   text-align: left;
+  margin-left: 10px;
 }
 
 section {
