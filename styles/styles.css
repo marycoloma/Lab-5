@@ -9,14 +9,17 @@ body {
   padding: 20px;
 }
 
-/* Top row: Home page + circles */
+/* Top row: small Home page + circles */
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-top h1 {
+/* Make "Home page" small */
+.page-label {
+  font-size: 18px;
+  font-weight: normal;
   margin: 0;
 }
 
