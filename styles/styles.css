@@ -1,119 +1,79 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #fafafa;
-  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Small top header bar */
+/* Header layout */
 .top-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #e6e6e6;
-  padding: 15px 20px;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 15px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
-/* Logo + title */
-.logo {
-  width: 40px;
-  height: auto;
+/* Oval site logo */
+.logo-oval {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
 }
 
-.page-title {
-  font-size: 1.4rem;
-}
-
-/* Navigation box BELOW header, aligned LEFT */
-.top-nav {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 20px 15px 20px;
-}
-
+/* Navigation */
 .top-nav ul {
   list-style: none;
-  display: flex;
-  gap: 20px;
-  background-color: white;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.top-nav li {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .top-nav a {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 
 .top-nav a.active {
-  font-weight: bold;
   color: blue;
+  font-weight: bold;
 }
 
-/* Shared content spacing (HOME uses this as-is) */
-.content {
-  padding-left: 40px;
-  padding-right: 20px;
-  max-width: 900px;
-  text-align: left;
+/* Main content */
+main {
+  padding: 20px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-section h2 {
-  margin-bottom: 10px;
-}
-
-/* CONTACT PAGE: adjust only this page's main + section */
-.content.contact-page {
-  padding-left: 0; /* remove left offset so we can truly center */
-  padding-right: 0;
-  max-width: 900px;
-  margin: 0 auto; /* center the whole contact main */
-}
-
-/* Center the contact block itself */
-.content.contact-page section {
-  width: 400px; /* column width for the form */
-  margin: 40px auto; /* center the section in the page */
-}
-
-/* Form fills the 400px column */
+/* Form */
 form {
-  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-form label {
-  text-align: left;
-  font-weight: bold;
+label {
+  margin-top: 10px;
 }
 
-form input,
-form textarea {
-  width: 100%;
+input,
+textarea {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
   padding: 10px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  width: 120px;
-  padding: 10px;
-  align-self: center;
-  background-color: #0077cc;
+  background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
@@ -123,12 +83,6 @@ form button {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #ddd;
+  background-color: #f2f2f2;
   margin-top: 40px;
-}
-
-/* ⭐ HOME PAGE ONLY — final alignment fix */
-.content.home-page {
-  padding-left: 20px; /* aligns perfectly with nav */
-  padding-right: 20px;
 }
