@@ -4,19 +4,54 @@ body {
   padding: 0;
 }
 
-/* HEADER (centered like mock-up) */
-header {
-  text-align: center;
+/* HEADER */
+.page-header {
   padding: 20px;
 }
 
-/* Oval logo */
+/* Top row: Home page + circles */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top h1 {
+  margin: 0;
+}
+
+/* Three circles */
+.header-circles {
+  display: flex;
+  gap: 8px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Underline */
+.underline {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0 20px 0;
+}
+
+/* Middle row: logo + Page Name */
+.header-middle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .logo-oval {
   width: 120px;
   height: 70px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 10px 0;
 }
 
 /* VERTICAL NAVIGATION BOX */
@@ -24,9 +59,8 @@ header {
   width: 150px;
   border: 1px solid #ccc;
   padding: 10px;
-  text-align: left;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .side-nav .nav-item {
@@ -39,11 +73,11 @@ header {
 }
 
 .side-nav .nav-item.active {
-  background-color: #cce0ff; /* light blue highlight */
+  background-color: #cce0ff;
   font-weight: bold;
 }
 
-/* LEFT-ALIGNED MAIN CONTENT */
+/* LEFT CONTENT */
 .left-content {
   padding: 20px;
   text-align: left;
